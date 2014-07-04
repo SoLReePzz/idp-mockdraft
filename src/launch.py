@@ -16,42 +16,58 @@ def load_quarterback_data():
 	quarterbacks = qbFile.readlines()
 	qbFile.close()
 	print("Quarterbacks:")
-	print(quarterbacks)
+	for quarterback in quarterbacks:
+		print(quarterback)
 	return quarterbacks
 
 
 def load_running_back_data():
-	running_backs = "Empty RBs"
+	rbFile = open("/Users/SoLReePzz/Documents/IDP Project/src/resources/runningbacks.txt")
+	running_backs = rbFile.readlines()
+	rbFile.close()
 	print("Running backs:")
-	print(running_backs)
+	for running_back in running_backs:
+		print(running_back)
 	return running_backs
 
 
 def load_wide_receiver_data():
-	wide_receivers = "Empty WRs"
+	wrFile = open("/Users/SoLReePzz/Documents/IDP Project/src/resources/widereceivers.txt")
+	wide_receivers = wrFile.readlines()
+	wrFile.close()
 	print("Wide receivers:")
-	print(wide_receivers)
+	for wide_receiver in wide_receivers:
+		print(wide_receiver)
 	return wide_receivers
 
 
 def load_tight_end_data():
-	tight_ends = "Empty TEs"
+	teFile = open("/Users/SoLReePzz/Documents/IDP Project/src/resources/tightends.txt")
+	tight_ends = teFile.readlines()
+	teFile.close()
 	print("Tight ends:")
-	print(tight_ends)
+	for tight_end in tight_ends:
+		print(tight_end)
 	return tight_ends
 
 
 def load_kicker_data():
-	kickers = "Empty Kickers"
+	kFile = open("/Users/SoLReePzz/Documents/IDP Project/src/resources/kickers.txt")
+	kickers = kFile.readlines()
+	kFile.close()
 	print("Kickers:")
-	print(kickers)
+	for kicker in kickers:
+		print(kicker)
 	return kickers
 
 
 def load_defense_data():
-	defenses = "Empty RBs"
+	dFile = open("/Users/SoLReePzz/Documents/IDP Project/src/resources/defenses.txt")
+	defenses = dFile.readlines()
+	dFile.close()
 	print("Defenses:")
-	print(defenses)
+	for defense in defenses:
+		print(defense)
 	return defenses
 
 
